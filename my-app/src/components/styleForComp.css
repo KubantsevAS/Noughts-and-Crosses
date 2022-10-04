@@ -1,0 +1,27 @@
+.square {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid darkgreen;
+    transition: background-color linear .3s;
+    cursor: pointer;
+}
+
+.square:hover {
+    background-color: gray;
+}
+
+.board {
+    display: block;
+    width: 500px;
+    background-color: burlywood;
+    margin: 100px auto 0;
+    padding: 100px 0;
+}
+
+.boardRow {
+    display: flex;
+    justify-content: center;
+}
