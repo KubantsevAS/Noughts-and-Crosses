@@ -1,3 +1,6 @@
+body {
+    background-color: aliceblue;
+}
 .square {
     margin: 0;
     padding: 0;
@@ -5,7 +8,7 @@
     height: 100px;
     background-color: white;
     border: 1px solid darkgreen;
-    transition: background-color linear .5s;
+    transition: background-color linear .3s;
     cursor: pointer;
     box-sizing: border-box;
     text-align: center;
@@ -22,8 +25,26 @@
     justify-content: center;
     align-items: center;
     width: 300px;
-    background-color: burlywood;
-    margin: 50px auto 0;
-    padding: 100px;
+    margin: 0 auto 0;
+}
+
+.start__btn {
+    width: 200px;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    background-color: darkgreen;
+    color: white;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.playground {
+    
+    margin-top: 50px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 

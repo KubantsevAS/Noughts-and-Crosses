@@ -49,9 +49,12 @@ const GameLogic = () => {
     }
 
     return (
-        <div>
-            {startNewGame()}
+        <div className='playground'>
+            <p className='game__info'>
+                {winner ? 'Победитель: ' + winner : 'Текущий ход: ' + (xIsNext ? 'X' : 'O')}
+            </p>
             <Board squares={board} click={handleClick}/>
+            {startNewGame()}
         </div>
     );
 }
