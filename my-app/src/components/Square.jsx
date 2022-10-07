@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import "./styleForComp.css"
+import Board from "./Board";
 
-const Square = (i) =>{
+const Square = (props) => {
+    
 
     return (
-        <div id={i} className="square" onClick={() => {console.log(i)}}></div>
+        <div className="square" onClick={props.onClick}>
+            {props.value}
+        </div>
         )
 }
 
